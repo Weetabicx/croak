@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>*croaks* morty!</title>
+	<script type="text/javascript">
+		function selector() {
+			season = Math.random() * 4;
+			season = Math.floor(season + 1);
+			if (season == 1) {
+				episode = Math.floor((Math.random() * 11) + 1)
+			} else {
+				episode = Math.floor((Math.random() * 10) + 1)
+			};
+			link = 'https://onionplay.is/episodes/rick-and-morty-season-'+ season +'-episode-'+ episode +'/';
+			window.open(link); 
+		}
+
+	</script>
+</head>
+<body style="background-color: black; align-content: center;">
+<input type="button" onclick="selector()" value='croak' style='border-radius: 12px; width: 100%; background-color: purple; border: 2px solid yellow; padding: 32px 0px 32px 0px'>
+</body>
+</html>
